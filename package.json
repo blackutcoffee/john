@@ -1,0 +1,32 @@
+{
+  "name": "wk-eleven-challenge",
+  "version": "1.0.0",
+  "description": "NOTE-TAKER",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blackutcoffee/wk-eleven-challenge.git"
+  },
+  "keywords": [
+    "Note",
+    "Taker"
+  ],
+  "author": "John Clark",
+  "license": "UT",
+  "bugs": {
+    "url": "https://github.com/blackutcoffee/wk-eleven-challenge/issues"
+  },
+  "homepage": "https://github.com/blackutcoffee/wk-eleven-challenge#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.7",
+    "uuid": "^3.4.0",
+    "validation": "0.0.1"
+  }
+}
