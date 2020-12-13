@@ -23,11 +23,11 @@ This Heroku application enables inhanitants to take notes, save notes, and delet
 
 
 ## **Install**
-Download the github link. cd into the proper directory, run npm install cors express uuid. Start the server via npm start. You can then navigate to [note-taker-john.herokuapp.com](https://note-taker-john.herokuapp.com/) and you will be taken to the applications hompage.
+Download the github link. cd into the proper directory, run npm install cors express uuid. Start the server via npm start. You can then navigate to [clarknotetaker.herokuapp.com](https://clarknotetaker.herokuapp.com/) and you will be taken to the applications hompage.
 
 ## **Usage**
 This application creates notes with selected input provided by end users which is then processed by nodemon. 
-- Lets test this app! Click the link here: [Note-Taker](https://note-taker-john.herokuapp.com/)
+- Lets test this app! Click the link here: [Note-Taker](https://clarknotetaker.herokuapp.com/)
 
 ## **Contributions**
 Contribute to this project:
