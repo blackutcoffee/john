@@ -1,27 +1,18 @@
-// Required Dependencies
-const path = require("path");
-const fs = require("fs");
-const express = require("express");
-// Server Instantiate Express App Then Sets Hardcoded Port.
-const PORT = process.env.PORT || 8080;
-const app = express();
+const express = require('express');
+// const fs = require('fs');
+const path = require('path');
+const apiRoutes = require('./routes/apiRoutes');
+const htmlRoutes = require('./routes/htmlRoutes');
 const router = require('express').Router();
-const apiRoutes = require("./routes/apiRoute");
-const htmlRoutes = require("./routes/htmlRoute");
 
-//Parses Stringed Array
-app.use(express.urlencoded({ extended: true }));
-//Parse Incoming JSON
+const app = express();
+const PORT = process.env.PORT || 8080;
+
 app.use(express.json());
-app.use(express.static("public"));
-
-//Middleware: points our server to a series of "route" files.
-app.use("/api", apiRoutes);
-app.use("/", htmlRoutes);
-
-// The below code effectively "starts" our server
-// =============================================================================
-// Big Brothers LISTENER!
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static('public'));
+app.use('/api', apiRoutes);
+app.use('/', htmlRoutes);
 app.listen(PORT, () => {
-  console.log(`API server now on port ${PORT}.`);
+  console.log(`Applicaion Listening On Port ${PORT}!`);
 });
